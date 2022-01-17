@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Inlämning bildspel</title>
+  </head>
+  <body>
+    <!--bild container-->
+    <div class="bildcontainer">
+      <h1>Här är mitt bildspel</h1>
+      <div class="images">
+        <div id="bilder"></div>
+      </div>
+      <div class="innehåll">
+        <div class="Content">
+          <button id="closeBtn">X</button>
+          <img src="" class="bild" id="imageData" alt="" />
+          <p id="contentText"></p>
+        </div>
+      </div>
+    </div>
+
+    <!--bild container slut-->
+
+    <div class="header">
+        <!--Waves Container-->
+        <div>
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(233,2335,255,0.7"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.5)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.3)"
+              />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
+        <!--Waves end-->
+      
+
+    <!--text sektion-->
+
+    <div class="sektion1">
+      <h3>Hur kan vi hjälpa dig?</h3>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ratione
+        dicta quae harum sit perferendis eaque dolore autem exercitationem,
+        quisquam, id iste, nesciunt voluptas neque possimus sint nostrum
+        incidunt quas! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        <br />
+        Ipsa ratione dicta quae harum sit perferendis eaque dolore autem
+        exercitationem, quisquam, id iste, nesciunt voluptas neque possimus sint
+        nostrum incidunt quas! Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit.<br />
+        Ipsa ratione dicta quae harum sit perferendis eaque dolore autem
+        exercitationem, quisquam, id iste, nesciunt voluptas neque possimus sint
+        nostrum incidunt quas!
+      </p>
+    </div>
+
+    <div class="sektion1">
+        <h3>Lite om oss</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ratione
+          dicta quae harum sit perferendis eaque dolore autem exercitationem,
+          quisquam, id iste, nesciunt voluptas neque possimus sint nostrum
+          incidunt quas! Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          <br />
+          
+          Ipsa ratione dicta quae harum sit perferendis eaque dolore autem
+          exercitationem, quisquam, id iste, nesciunt voluptas neque possimus sint
+          nostrum incidunt quas!
+        </p>
+      </div>
+
+    <!--text sektion slut-->
+
+    <script src="app.js"></script>
+  </body>
+</html>
