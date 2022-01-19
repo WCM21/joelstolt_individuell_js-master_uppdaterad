@@ -1,35 +1,35 @@
-const innehåll = document.querySelector(".innehåll");
+const popup = document.querySelector(".popup");
 
-fetch("./images.json")
+
+fetch("joelstolt_individuell_js-master/images.json")
   .then((svar) => svar.json())
 
   .then((data) => {
     const imageData = data;
-    document.getElementById("bilder").innerHTML = `
-      ${imageData
-        .map(function (bild) {
-          return `
-              <div class="images">
-                  <img class="bild" src="${bild.url}" data-description="${bild.description}">
-              </div>        
-          `;
-        })
-        .join("")}
+    const imageContainer = document.getElementById("bilder");
 
+    imageData.forEach(image => {
+      imageContainer.innerHTML += `
+      <div class="images">
+          <img class="bild" src="${image.url}" data-description="${image.description}" />
+      </div>
       `;
+    });
+
   });
 
 document.addEventListener("click", function (e) {
   if (e.target.classList.contains("bild")) {
     let src = e.target.getAttribute("src");
     document.getElementById("imageData").src = src;
-    innehåll.style.display = "block";
+    popup.style.display = "block";
 
     let popDesc = e.target.dataset.description;
     document.getElementById("contentText").innerHTML = popDesc;
   }
 });
 
-closeBtn.onclick = function () {
-  innehåll.style.display = "none";
-};
+const closeBtn = document.querySelector('#closeBtn');
+closeBtn.addEventListener('click', function () {
+  popup.style.display = "none";
+});
